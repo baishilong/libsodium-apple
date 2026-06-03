@@ -16,4 +16,10 @@ s.ios.deployment_target = '12.0'
  # s.tvos.deployment_target = '12.0'
  # s.watchos.deployment_target = '4.0'
  # s.visionos.deployment_target = '1.0'
+
+   s.pod_target_xcconfig = {
+    'HEADER_SEARCH_PATHS' => '$(inherited) "${PODS_TARGET_SRCROOT}/Clibsodium.xcframework/ios-arm64/Clibsodium.framework/Headers" "${PODS_TARGET_SRCROOT}/Clibsodium.xcframework/ios-arm64_x86_64-simulator/Clibsodium.framework/Headers"',
+    'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES'
+  }
+
 end

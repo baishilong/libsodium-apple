@@ -1,5 +1,6 @@
 #import "HNSodiumCryptoBox.h"
-#import <sodium.h>
+#import <Clibsodium/sodium.h>
+
 @implementation HNSodiumCryptoBox {
     NSData *_mySecretKey;
     NSData *_peerPublicKey;
