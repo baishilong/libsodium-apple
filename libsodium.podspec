@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'libsodium'
-  s.version          = '1.0.0' 
+  s.version          = '1.0.1' 
   s.summary          = 'A modern and easy-to-use crypto library.'
   s.description      = 'Libsodium is a portable, cross-compilable crypto library.'
   s.homepage         = 'https://github.com/jedisct1/libsodium'
@@ -9,9 +9,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/baishilong/libsodium-apple.git', :tag => s.version.to_s }
 
   s.vendored_frameworks = 'Clibsodium.xcframework'
-  s.source_files = 'Classes/**/*.{h,m}'
-  s.public_header_files = 'Classes/**/*.h'  
-s.ios.deployment_target = '12.0'
+  s.ios.deployment_target = '12.0'
   s.osx.deployment_target = '10.13'
  # s.tvos.deployment_target = '12.0'
  # s.watchos.deployment_target = '4.0'
