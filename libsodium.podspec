@@ -1,0 +1,18 @@
+Pod::Spec.new do |s|
+  s.name             = 'libsodium'
+  s.version          = '1.0.0'
+  s.summary          = 'A modern and easy-to-use crypto library.'
+  s.description      = 'Libsodium is a portable, cross-compilable crypto library.'
+  s.homepage         = 'https://github.com/jedisct1/libsodium'
+  s.license          = 'ISC'
+  s.author           = { 'baishilong' => '790696023@qq.com.com' }
+  s.source           = { :git => 'https://github.com/baishilong/libsodium-apple.git', :tag => s.version.to_s }
+
+  s.vendored_frameworks = 'Clibsodium.xcframework'
+
+  s.ios.deployment_target = '12.0'
+  s.osx.deployment_target = '10.13'
+  s.tvos.deployment_target = '12.0'
+  s.watchos.deployment_target = '4.0'
+  s.visionos.deployment_target = '1.0'
+end
